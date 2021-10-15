@@ -8,39 +8,45 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>PANDEKAGEMASKINE</h1>
-    <p>Her kan du finde opskriften på de bedste pandekager. <br> Opskalér opskriften alt efter hvor mange personer i er, som skal dele dem.</p>
+    <h1>Pandekagemaskine</h1>
+    <h2>Her kan du finde opskriften på de bedste pandekager.</h2> 
+    <p>Opskalér opskriften alt efter hvor mange personer i er, som skal dele dem.</p>
 
-    <form onsubmit="return false" oninput="output.value = numberOfPersons.valueAsNumber">
-        <h3>Hvor mange skal dele pandekagerne?</h3>
-        <input id="numberOfPersons" type="range" min="1" max="50" value="3"><br>
-        Antal af personer er <output for="numberOfPersons" name="output">3</output>.
-    </form>
+    <div class="flex-container">
+        <div class="recipe">
+            <form onsubmit="return false" oninput="output.value = numberOfPersons.valueAsNumber">
+                <h3>Hvor mange skal dele pandekagerne?</h3>
+                <input id="numberOfPersons" type="range" min="1" max="50" value="3"><br>
+                Antal af personer er <output for="numberOfPersons" name="output">3</output>.
+            </form>
 
-<ul>
-    <li>
-        <input type="textEgg" name="egg" value="3">stk æg
-    </li>
-    <li>
-        <input type="textFlour" name="flour" value="3">dl mel
-    </li>
-    <li>
-        <input type="textMilk" name="milk" value="4.5">dl mælk
-    </li>
-    <li>
-        <input type="textSalt" name="salt" value="1.5">tsk salt
-    </li>
-    <li>
-        <input type="textVanilla" name="vanilla" value="2">tsk vaniljesukker
-    </li>
-    <li>
-        <input type="textVanilla" name="butter" value="15">g ca. magarine/smør til stegning
-    </li>
-</ul>
-
-<p>Æggene slås ud i en skål, blandes med mel, salt og vaniljesukker.</p>
-<p>Med en elpisker mikses dejen færdig, imens der lidt af gangen tilsættes mælken.</p>
-<p>Smør/magarine på panden, der hældes ca en dl af dejen på en middelvarm stegepande, steges 2 min på hver side.</p>
-<p>Tages af og serveres med sirup, syltetøj eller sukker.</p>
+            <ul>
+                <li>
+                    <input type="textEgg" name="egg" value="3">stk æg
+                </li>
+                <li>
+                    <input type="textFlour" name="flour" value="3">dl mel
+                </li>
+                <li>
+                    <input type="textMilk" name="milk" value="4.5">dl mælk
+                </li>
+                <li>
+                    <input type="textSalt" name="salt" value="1.5">tsk salt
+                </li>
+                <li>
+                    <input type="textVanilla" name="vanilla" value="2">tsk vaniljesukker
+                </li>
+                <li>
+                    <input type="textVanilla" name="butter" value="15">g ca. magarine/smør til stegning
+                </li>
+            </ul>
+        </div>
+        <div class="todo">
+            <p><span>1.</span> Æggene slås ud i en skål, blandes med mel, salt og vaniljesukker.</p>
+            <p><span>2.</span> Med en elpisker mikses dejen færdig, imens der lidt af gangen tilsættes mælken.</p>
+            <p><span>3.</span> Smør/magarine på panden, der hældes ca en dl af dejen på en middelvarm stegepande, steges 2 min på hver side.</p>
+            <p><span>4.</span> Tages af og serveres med sirup, syltetøj eller sukker.</p>
+        </div>
+    </div>
 </body>
 </html>
